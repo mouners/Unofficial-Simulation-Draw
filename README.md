@@ -3,7 +3,7 @@ About
 You can try the draw: https://draw-04.web.app/
 
 Introduction: <br/>
-A few days ago, I watched the UEFA Champions League Group Stage Draw, and for the first time, the draw was conducted using a computer. While watching, I couldn't help but wonder: How was it done? What algorithm was behind it?
+A few weeks ago, I watched the UEFA Champions League Group Stage Draw, and for the first time, the draw was conducted using a computer. While watching, I couldn't help but wonder: How was it done? What algorithm was behind it?
 
 After some research and development, I found the answers. Today, I'm excited to present a full simulation of the UEFA Champions League Group Stage Draw. With this project, you can now host your very own draw!
 
