@@ -1,0 +1,15 @@
+{
+  "short_name": "Simulation Draw",
+  "name": "Create Unofficial Simulation Draw Sample",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

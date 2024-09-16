@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+
+/* Style for the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px;           /* Width of the scrollbar */
+  background-color: none;  /* Background of the scrollbar */
+}
+
+/* Style for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #0070a3;  /* Scrollbar color */
+  border-radius: 6px;         /* Rounded corners for the thumb */
+  border: 3px solid #f0f0f0;  /* Add space between thumb and scrollbar background */
+}
+
+/* Style for the scrollbar when hovering */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #005d82;  /* Darker color on hover */
+}
+
+/* Style for the scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent;   /* Track color */
+}
+
+.header {
+  width: 100%;
+  height: 35px;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;  /* Ensures no margin around the <p> */  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: smaller;
+  background-color: #3c4043;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.topBar {
+  width: 100%;
+  height: 75px;
+  background-color: #0070a3;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20px;
+  position: fixed;
+  z-index: 1;
+  top: 35px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: height 0.3s ease-in-out;
+}
+
+.topBar.shrink {
+  height: 40px;  /* Smaller height when shrunk */
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: auto;
+  justify-content: center;
+}
+
+a{
+  position: relative;
+  cursor: pointer;
+  color: lightgray;
+  font-size: medium;
+  padding: 0.5rem 1rem;
+  transition: color 0.25s;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+a::after{
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: lightgray;
+  scale: 1 0;
+  z-index: -1;
+  transition: 0.45s;
+  border-radius: 10px;
+}
+
+a:hover{
+  color: black;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
+
+}
+
+a:hover::after{
+  scale: 1 1;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.title{
+  width: 50%;
+
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
+  font-family: "Headland One", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.startBtn{
+  width: 15%;
+  margin-top: 90px;
+  display: inline-block;
+  position: relative;
+  background-color: #0070a3;
+  color: white;
+  font-size: medium;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+.startBtn:hover{
+  width: 20%;
+  background-color: #009de6;
+  color: white;
+}
+
+.info{
+  font-size: small;
+  font-style: italic;
+  font-weight: bold;
+  color: gray;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 678px) {
+
+  .topBar{
+    justify-content: center;
+    padding-left: 0px;
+    height: 60px;
+  }
+
+  .title{
+    width: 100%;
+    font-size: 26px;
+  }
+
+  .startBtn{
+    width: 50%;
+    font-size: 14px;
+  }
+}
